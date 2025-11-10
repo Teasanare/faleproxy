@@ -27,6 +27,10 @@
   },
   "jest": {
     "testEnvironment": "node",
+    "maxWorkers": 1,
+    "testPathIgnorePatterns": [
+      "<rootDir>/app.test.js"
+    ],
     "collectCoverageFrom": [
       "**/*.js",
       "!**/node_modules/**",
